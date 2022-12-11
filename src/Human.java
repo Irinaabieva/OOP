@@ -5,8 +5,17 @@ public class Human {
     private  String jobTitle;
 
     public Human(int yearOfBirth, String name, String town, String jobTitle) {
-        this.yearOfBirth = yearOfBirth;
-        this.name = name;
+
+        if (yearOfBirth >= 0) {
+            this.yearOfBirth = yearOfBirth;
+        } else {
+            this.yearOfBirth = 0;
+        }
+        if (name == null || name.isEmpty()) {
+            this.name = "Информация не указана";
+        } else {
+            this.name = name;
+        }
         this.town = town;
         this.jobTitle = jobTitle;
     }
