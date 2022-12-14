@@ -10,5 +10,18 @@ public class Main {
         System.out.println(artem.toString());
         Human vladimir = new Human(-1, "", "","Не работает");
         System.out.println(vladimir.toString());
+
+        Flower roza = new Flower("Роза обыкновенная","",35.29,0);
+        Flower chrysanthemum = new Flower("Хризантема", "", 15, 5);
+        Flower peony = new Flower("Пион", "Англия", 69.9, 1);
+        Flower gypsophila = new Flower("Гипсофила", "Турция", 19.5, 10);
+        peony.setLifeSpan(5);
+        Bouquet bouquet = new Bouquet(new Flower[]{
+                roza,roza,roza,
+                chrysanthemum,chrysanthemum,chrysanthemum,chrysanthemum,chrysanthemum,
+                gypsophila});
+        bouquet.printPrice();
+
     }
+
 }
