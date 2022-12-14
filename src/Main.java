@@ -8,5 +8,7 @@ public class Main {
         System.out.println(katya.toString());
         Human artem = new Human(1995, "Артем", "Москва","директор по развитию бизнеса");
         System.out.println(artem.toString());
+        Human vladimir = new Human(-1, "", "","Не работает");
+        System.out.println(vladimir.toString());
     }
 }
